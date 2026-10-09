@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASRAFUJJAMAN SAIMON | Computer Science & Engineering Student</title>
+<meta name="description" content="Online CV of Asrafujjaman Saimon, a Computer Science & Engineering student, 2★ CodeChef coder, with experience in software development, testing, GPS/IoT systems and AI-assisted development.">
+<meta name="theme-color" content="#090e17">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090e17;--bg2:#101828;--card:#111a2b;--line:#22304a;--tx:#e8eef9;--mut:#93a3bd;--ac:#2fd4c8;--ac2:#7c8cff;--r:18px}
+[data-theme=light]{--bg:#f5f8fc;--bg2:#e9eff7;--card:#fff;--line:#d5deeb;--tx:#0e1a2b;--mut:#51627c;--ac:#0b8f86;--ac2:#4f5fe0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font:400 16px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3,.sg{font-family:'Space Grotesk',sans-serif;line-height:1.1}
+.mono{font-family:'JetBrains Mono',monospace}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+section{padding:110px 0}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:100}
+#glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:0;left:0;top:0;background:radial-gradient(circle,color-mix(in srgb,var(--ac) 16%,transparent),transparent 65%);transform:translate(-50%,-50%)}
+nav{position:fixed;inset:0 0 auto;z-index:90;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 20px 'JetBrains Mono';color:var(--ac)}
+.links{display:flex;gap:26px;align-items:center;font-size:14px;color:var(--mut)}
+.links a:not(.btn){position:relative;padding:4px 0;transition:color .2s}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--ac);transition:width .3s}
+.links a:hover,.links a.on{color:var(--tx)}.links a:hover::after,.links a.on::after{width:100%}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 22px;border-radius:99px;font-weight:500;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#06101c;border:0;box-shadow:0 10px 30px -10px var(--ac)}
+#tg{background:none;border:1px solid var(--line);color:var(--tx);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px}
+#menu{display:none;background:none;border:0;color:var(--tx);font-size:26px;cursor:pointer}
+/* hero */
+#home{min-height:100vh;display:flex;align-items:center;padding-top:100px;position:relative;overflow-x:clip}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;position:relative;z-index:1}
+.tag{display:inline-block;color:var(--ac);font-size:13px;letter-spacing:.2em;margin-bottom:18px}
+h1{font-size:clamp(36px,5.4vw,76px);font-weight:700;letter-spacing:-.03em}
+h1 .w{display:inline-block;white-space:nowrap}
+h1 .grad{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:inherit;animation:none}
+h1 .ch{display:inline-block;opacity:0;transform:translateY(60%) rotateX(-70deg);animation:ch .7s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes ch{to{opacity:1;transform:none}}
+.grad{background:linear-gradient(100deg,var(--ac),var(--ac2),var(--ac));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.role{font-size:clamp(18px,2.4vw,26px);margin:22px 0 10px;color:var(--mut);min-height:1.6em}
+.role b{color:var(--tx);font-weight:500}
+.cur{display:inline-block;width:2px;height:1em;background:var(--ac);margin-left:3px;vertical-align:-.12em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.hero p.l{color:var(--mut);max-width:560px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.stage{position:relative;aspect-ratio:469/489;isolation:isolate;display:flex;align-items:flex-end}
+.stage::before{content:"";position:absolute;inset:7% 3% 0;border-radius:34px;background:radial-gradient(110% 80% at 50% 20%,color-mix(in srgb,var(--ac) 34%,transparent),transparent 70%),linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);z-index:-2}
+.stage::after{content:"";position:absolute;width:88%;aspect-ratio:1;left:6%;top:0;border-radius:50%;background:conic-gradient(var(--ac),transparent 30%,var(--ac2) 55%,transparent 80%,var(--ac));filter:blur(46px);opacity:.38;z-index:-1;animation:spin 16s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stage img{width:111.1%;max-width:none;height:auto;flex:none;display:block;filter:drop-shadow(0 20px 26px rgba(0,0,0,.35));-webkit-mask-image:linear-gradient(#000 90%,transparent);mask-image:linear-gradient(#000 90%,transparent);animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.fchip{position:absolute;z-index:2;background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font:500 13px 'JetBrains Mono',monospace;white-space:nowrap;animation:fl 6s ease-in-out infinite;transition:border-color .2s}
+a.fchip:hover{border-color:var(--ac)}
+.fchip b{color:var(--ac)}
+.c1{top:12%;right:-4%}.c2{bottom:20%;left:-6%;animation-delay:-2s}.c3{bottom:7%;right:-2%;animation-delay:-4s}
+/* codechef */
+.cc{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}
+.ccmain{padding:36px;position:relative;overflow:hidden}
+.stars{font-size:30px;letter-spacing:6px;color:#ffc94d;text-shadow:0 0 24px rgba(255,201,77,.45)}
+.ccmain h3{font-size:34px;margin:6px 0 4px}
+.rate{display:flex;align-items:baseline;gap:14px;margin:14px 0 6px}
+.rate b{font:700 clamp(52px,8vw,84px)/1 'Space Grotesk';background:linear-gradient(100deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rate span{color:var(--mut);font-size:14px}
+.pb{height:8px;border-radius:99px;background:var(--bg2);border:1px solid var(--line);overflow:hidden;margin:16px 0 6px}
+.pb i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));border-radius:99px;transition:width 1.6s cubic-bezier(.2,.8,.2,1) .3s}
+.rv.in .pb i{width:var(--w)}
+.ccgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ccgrid .stat b{font-size:38px}
+.bdg{grid-column:1/-1;display:flex;gap:14px;align-items:center}
+.bdg i{font-style:normal;font-size:26px}
+.bdg p{color:var(--mut);font-size:14px;margin:0}.bdg b{display:block;color:var(--tx);font:500 15px 'Space Grotesk'}
+.code{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-size:12.5px;color:var(--mut)}
+.code em{color:var(--ac);font-style:normal}.code i{color:var(--ac2);font-style:normal}
+.scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.2em;color:var(--mut)}
+/* marquee */
+.mq{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--bg2)}
+.mq div{display:flex;gap:48px;width:max-content;animation:mq 28s linear infinite;font:500 18px 'Space Grotesk';color:var(--mut);white-space:nowrap}
+.mq span::before{content:"✦ ";color:var(--ac)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* headings */
+.sh{margin-bottom:54px}
+.sh .tag{margin:0 0 12px}
+h2{font-size:clamp(30px,4.6vw,52px);letter-spacing:-.02em}
+.sh p{color:var(--mut);margin-top:14px;max-width:560px}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--ac);box-shadow:0 20px 40px -24px var(--ac)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chip{padding:6px 14px;border:1px solid var(--line);border-radius:99px;font-size:13px;color:var(--mut);background:var(--bg2);transition:.2s}
+.chip:hover{color:var(--bg);background:var(--ac);border-color:var(--ac)}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:34px}
+.about p{color:var(--mut);margin-bottom:16px}
+.stats{display:grid;gap:16px}
+.stat b{font:700 44px 'Space Grotesk';color:var(--ac);display:block}
+.stat span{color:var(--mut);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.num{color:var(--ac);font-size:13px;margin-bottom:14px;display:block}
+.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--mut);font-size:15px}
+/* timeline */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--ac),var(--ac2),transparent)}
+.tl .card{margin-bottom:20px;position:relative}
+.tl .card::before{content:"";position:absolute;left:-34px;top:34px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--ac)}
+.badge{float:right;font-size:11px;letter-spacing:.14em;color:var(--ac);border:1px solid var(--ac);border-radius:99px;padding:3px 12px}
+.sm{color:var(--mut);font-size:14px}
+/* project */
+.proj{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;padding:40px}
+.proj ul{list-style:none;margin-top:12px}
+.proj li{padding:10px 0;border-bottom:1px dashed var(--line);color:var(--mut)}
+.proj li::before{content:"→ ";color:var(--ac)}
+.gps{display:grid;place-items:center;border-radius:14px;min-height:200px;background:var(--bg2);position:relative;overflow:hidden;margin-bottom:20px}
+.gps i{position:absolute;border:1px solid var(--ac);border-radius:50%;width:40px;height:40px;animation:rp 3s ease-out infinite;opacity:0}
+.gps i:nth-child(2){animation-delay:1s}.gps i:nth-child(3){animation-delay:2s}
+@keyframes rp{0%{transform:scale(.4);opacity:.9}100%{transform:scale(6);opacity:0}}
+.gps b{width:14px;height:14px;border-radius:50%;background:var(--ac);box-shadow:0 0 20px var(--ac);z-index:1}
+.stack .card h3{font-size:18px}
+.mini{font-size:12px;letter-spacing:.14em;color:var(--ac);display:block;margin-bottom:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+ol.hs{list-style:none;display:grid;gap:12px}
+ol.hs li{display:flex;gap:14px;color:var(--mut);padding:14px 0;border-bottom:1px solid var(--line)}
+ol.hs li span{color:var(--ac);font-size:13px;padding-top:3px}
+.obj{background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 14%,var(--card)),var(--card))}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:10px}
+.ct a.card b{display:block;font:500 17px 'Space Grotesk';word-break:break-all;margin:6px 0 2px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+@media(max-width:860px){
+ .hero,.about,.proj,.two,.cc{grid-template-columns:1fr}.stage{max-width:360px;margin:auto}.c1{right:0}.c2{left:0}.c3{right:0}
+ #menu{display:block}.links{position:fixed;inset:64px 0 auto;flex-direction:column;background:var(--bg);padding:24px;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s}
+ .links.open{transform:none}section{padding:80px 0}.badge{float:none;display:inline-block;margin-bottom:10px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,h1 .ch{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div><div id="glow"></div>
+<nav><div class="wrap">
+ <a href="#home" class="logo">&lt;AS/&gt;</a>
+ <div class="links" id="links">
+  <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#coding">Coding</a><a href="#projects">Projects</a>
+  <a href="#contact" class="btn p" style="padding:8px 18px">Let’s talk ↗</a>
+  <button id="tg" aria-label="Toggle theme">☾</button>
+ </div>
+ <button id="menu" aria-label="Menu">☰</button>
+</div></nav>
+
+<header id="home"><div class="wrap hero">
+ <div>
+  <span class="tag mono">AI · SOFTWARE · TECHNOLOGY</span>
+  <h1 id="name" aria-label="Asrafujjaman Saimon">ASRAFUJJAMAN <span class="grad">SAIMON</span></h1>
+  <div class="role sg">I'm a <b id="typed"></b><span class="cur"></span></div>
+  <p class="l">Computer Science & Engineering student building with logic & curiosity. Mobile apps, backend systems, GPS tracking and AI-assisted tools.</p>
+  <p class="mono sm" style="margin-top:14px">⌖ Chattogram, Bangladesh</p>
+  <div class="cta"><a href="#projects" class="btn p">Explore my work ↓</a><a href="#coding" class="btn">★★ CodeChef</a><a href="#contact" class="btn">Get in touch ↗</a></div>
+ </div>
+ <div>
+  <div class="stage"><img src="./profile.png?v=3" alt="Portrait of Asrafujjaman Saimon in a blue blazer" width="521" height="534" decoding="async"><a class="fchip c1" href="#coding"><b>★★</b> CodeChef · 1415</a><span class="fchip c2">⌖ Chattogram, BD</span><a class="fchip c3" href="#projects">⚙ SafePath developer</a></div>
+  <div class="code mono"><em>const</em> me = { codechef: <i>"2★"</i>, learn: <i>true</i>, ship: <i>"SafePath"</i> };</div>
+ </div>
+</div><div class="scroll mono">SCROLL ↓</div></header>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section id="about"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">01 — PROFILE</span><h2>Curious by nature.<br><span class="grad">Careful by design.</span></h2></div>
+ <div class="about">
+  <div class="rv">
+   <p>Motivated Computer Science and Engineering student with practical experience in technology projects, software development, testing, documentation, and team collaboration. Experienced in working with mobile applications, backend systems, GPS tracking, IoT-related technologies, and AI-assisted development tools.</p>
+   <p>Detail-oriented, adaptable, and comfortable following structured instructions, evaluating project results, identifying issues, and communicating clearly with team members. Interested in contributing to AI evaluation and technology projects while developing practical industry experience.</p>
+   <div class="chips"><span class="chip">AI & evaluation</span><span class="chip">Software development</span><span class="chip">Testing & quality</span><span class="chip">Team collaboration</span></div>
+  </div>
+  <div class="stats">
+   <div class="card stat rv" style="--d:.1s"><b data-n="8">0</b><span>Core strengths</span></div>
+   <div class="card stat rv" style="--d:.2s"><b data-n="14">0</b><span>Tools & technologies</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills" style="background:var(--bg2)"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">02 — CAPABILITIES</span><h2>Good work starts<br><span class="grad">with good habits.</span></h2><p>A practical mix of communication, careful execution, and a willingness to learn.</p></div>
+ <div class="grid" id="core"></div>
+ <div class="sh rv" style="margin-top:90px"><span class="tag mono">03 — STACK</span><h2>Tools I use<br><span class="grad">to make things work.</span></h2></div>
+ <div class="grid stack">
+  <div class="card rv"><span class="mini mono">LANGUAGES</span><h3>Programming</h3><div class="chips"><span class="chip">C</span><span class="chip">C++</span><span class="chip">Python</span></div></div>
+  <div class="card rv" style="--d:.08s"><span class="mini mono">BUILD</span><h3>Development</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">FastAPI</span><span class="chip">REST API</span></div></div>
+  <div class="card rv" style="--d:.16s"><span class="mini mono">DATA</span><h3>Database & Services</h3><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">Firebase</span></div></div>
+  <div class="card rv" style="--d:.24s"><span class="mini mono">TOOLING</span><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Android Studio</span></div></div>
+  <div class="card rv" style="--d:.32s"><span class="mini mono">PRACTICE</span><h3>Engineering practice</h3><div class="chips"><span class="chip">Data Structures & Algorithms</span><span class="chip">Software Testing</span><span class="chip">Debugging</span><span class="chip">Technical Documentation</span><span class="chip">AI-assisted development tools</span></div></div>
+ </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">04 — ACADEMIC BACKGROUND</span><h2>Learning is<br><span class="grad">part of the work.</span></h2></div>
+ <div class="tl">
+  <div class="card rv"><span class="badge mono">IN PROGRESS</span><span class="mini mono">CURRENT STUDY</span><h3>Bachelor of Science in Computer Science & Engineering</h3><p>Premier University · Chattogram</p><p class="sm">Currently studying — 3rd Semester</p></div>
+  <div class="card rv"><span class="badge mono">01/2024</span><span class="mini mono">HIGHER SECONDARY</span><h3>Higher Secondary Certificate (HSC)</h3><p>Islamia Degree College</p><p class="sm">GPA 5.00 / 5.00</p></div>
+  <div class="card rv"><span class="badge mono">01/2022</span><span class="mini mono">SECONDARY</span><h3>Secondary School Certificate (SSC)</h3><p>Banshkhali Government High School</p><p class="sm">GPA 4.67 / 5.00</p></div>
+ </div>
+</div></section>
+
+<section id="coding" style="background:var(--bg2)"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">05 — COMPETITIVE PROGRAMMING</span><h2>Solving problems<br><span class="grad">one contest at a time.</span></h2><p>I practise data structures & algorithms in timed CodeChef contests, and I’m a 2★ coder.</p></div>
+ <div class="cc">
+  <div class="card ccmain rv">
+   <div class="stars" aria-label="2 star coder">★★</div>
+   <span class="mini mono">CODECHEF · 2★ CODER · DIV 3</span>
+   <h3>asraf_1091</h3>
+   <div class="rate"><b data-n="1415">0</b><span>CodeChef rating<br>(highest: 1415)</span></div>
+   <div class="pb" style="--w:7.5%"><i></i></div>
+   <p class="sm mono">Next milestone: 3★ at 1600</p>
+   <div class="chips"><span class="chip">Rookie League</span><span class="chip">Bangladesh</span><span class="chip">C++ · Python</span></div>
+   <div class="cta"><a class="btn p" href="https://www.codechef.com/users/asraf_1091" target="_blank" rel="noopener">View CodeChef profile ↗</a></div>
+  </div>
+  <div class="ccgrid">
+   <div class="card stat rv" style="--d:.08s"><b data-n="52">0</b><span>Problems solved</span></div>
+   <div class="card stat rv" style="--d:.16s"><b data-n="9">0</b><span>Contests participated</span></div>
+   <div class="card stat rv" style="--d:.24s"><b>#<span data-n="41205">0</span></b><span>Global rank</span></div>
+   <div class="card stat rv" style="--d:.32s"><b>#<span data-n="1019">0</span></b><span>Country rank (Bangladesh)</span></div>
+   <div class="card bdg rv" style="--d:.4s"><i>🥉</i><p><b>Contest Contender · Bronze</b>Awarded for taking part in 5 contests</p></div>
+   <div class="card bdg rv" style="--d:.48s"><i>🥉</i><p><b>Problem Solver · Bronze</b>Awarded for solving 50 problems</p></div>
+  </div>
+ </div>
+ <p class="mono sm" style="margin-top:20px">Figures from my public CodeChef profile, October 2026. Rating is provisional.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">06 — SELECTED WORK</span><h2>Featured project</h2></div>
+ <div class="card proj rv">
+  <div>
+   <span class="mini mono">CASE_001 · PROJECT TEAM MEMBER / DEVELOPER</span>
+   <h2 style="font-size:36px">SafePath <span class="grad">/ University project</span></h2>
+   <p class="sg" style="margin:8px 0 18px;font-size:19px">GPS-Based Child Safety & Tracking Platform</p>
+   <p class="sm" style="font-size:15px;margin-bottom:12px">Contributed to the development and testing of a practical GPS-based child safety platform across mobile, backend, GPS tracking, and IoT-related components.</p>
+   <p class="sm" style="font-size:15px">Worked with teammates on debugging, documentation, project improvements, and a university technology exhibition presentation.</p>
+   <p class="sm" style="font-size:15px;margin-top:12px">The project is live as a bilingual (বাংলা / English) website for parents, with live GPS location, SOS alerts, geofence alerts, route history, and battery and speed warnings from a VE30C GPS tracker.</p>
+   <div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Firebase</span><span class="chip">GPS</span><span class="chip">IoT</span></div>
+   <div class="cta" style="margin-top:26px"><a class="btn p" href="http://103.213.39.208/" target="_blank" rel="noopener">Visit live website ↗</a><a class="btn" href="http://103.213.39.208/price.html" target="_blank" rel="noopener">See pricing ↗</a></div>
+  </div>
+  <div>
+   <div class="gps"><i></i><i></i><i></i><b></b></div>
+   <span class="mini mono">CONTRIBUTIONS</span>
+   <ul><li>Development and testing support</li><li>Debugging and project improvement</li><li>Documentation and team collaboration</li><li>Project presentation to visitors and evaluators</li></ul>
+  </div>
+ </div>
+</div></section>
+
+<section style="background:var(--bg2)"><div class="wrap">
+ <div class="two">
+  <div><div class="sh rv"><span class="tag mono">07 — WORK STYLE</span><h2>Thoughtful in<br><span class="grad">the details.</span></h2></div>
+   <ol class="hs rv">
+    <li><span class="mono">01</span>Comfortable working independently and in teams.</li>
+    <li><span class="mono">02</span>Able to understand and follow project instructions carefully.</li>
+    <li><span class="mono">03</span>Strong attention to detail in testing and task-based work.</li>
+    <li><span class="mono">04</span>Willing to learn new tools, processes, and AI-related workflows.</li>
+    <li><span class="mono">05</span>Comfortable working with flexible schedules and project deadlines.</li>
+    <li><span class="mono">06</span>Regularly use modern AI tools for learning, research, debugging, documentation, and software development.</li>
+   </ol></div>
+  <div class="card obj rv" style="align-self:start;margin-top:10px;padding:40px">
+   <span class="mini mono">CAREER OBJECTIVE</span>
+   <h2 style="font-size:34px;margin-bottom:16px">Build useful things.<br><span class="grad">Keep learning as I go.</span></h2>
+   <p>To contribute to AI evaluation and technology projects where I can apply my communication, technical, problem-solving, and quality-focused skills while gaining practical experience in AI-related workflows.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="sh rv"><span class="tag mono">08 — SAY HELLO</span><h2>Good work starts<br><span class="grad">with a conversation.</span></h2><p>Interested in AI evaluation and technology opportunities? I’d be glad to connect.</p></div>
+ <div class="ct">
+  <a class="card rv" href="tel:01608952699"><span class="mini mono">PHONE</span><b>01608952699</b><span class="sm">Call or message</span></a>
+  <a class="card rv" style="--d:.08s" href="mailto:asrafujjamansaimon@gmail.com"><span class="mini mono">EMAIL</span><b>asrafujjamansaimon@gmail.com</b><span class="sm">Send an email</span></a>
+  <a class="card rv" style="--d:.16s" href="https://github.com/asrafujjaman586" target="_blank" rel="noopener"><span class="mini mono">GITHUB</span><b>View profile ↗</b><span class="sm">asrafujjaman586</span></a>
+  <a class="card rv" style="--d:.24s" href="https://www.linkedin.com/in/asrafuj-jaman-saimon-78b000369/" target="_blank" rel="noopener"><span class="mini mono">LINKEDIN</span><b>View profile ↗</b><span class="sm">Asrafuj Jaman Saimon</span></a>
+  <a class="card rv" style="--d:.32s" href="https://www.codechef.com/users/asraf_1091" target="_blank" rel="noopener"><span class="mini mono">CODECHEF · 2★</span><b>asraf_1091 ↗</b><span class="sm">Rating 1415</span></a>
+  <a class="card rv" style="--d:.4s" href="http://103.213.39.208/" target="_blank" rel="noopener"><span class="mini mono">SAFEPATH LIVE</span><b>103.213.39.208 ↗</b><span class="sm">Project website</span></a>
+ </div>
+ <p class="mono sm" style="margin-top:26px">⌖ Chattogram, Bangladesh</p>
+</div></section>
+
+<footer><div class="wrap"><a href="#home" class="logo">&lt;AS/&gt;</a><span>ASRAFUJJAMAN SAIMON · ONLINE CV · © 2026</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// letter-by-letter name animation (letters grouped per word so a word never breaks mid-way)
+(function(){const h=$('#name');let i=0;
+ const wrap=n=>{[...n.childNodes].forEach(c=>{
+  if(c.nodeType===3){const f=document.createDocumentFragment();
+   c.textContent.split(/(\s+)/).forEach(tok=>{
+    if(!tok)return;
+    if(/^\s+$/.test(tok)){f.appendChild(document.createTextNode(' '));return}
+    const w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+    [...tok].forEach(ch=>{const s=document.createElement('span');s.className='ch';s.style.animationDelay=(i++*45)+'ms';s.textContent=ch;w.appendChild(s)});
+    f.appendChild(w)});
+   c.replaceWith(f)}
+  else wrap(c)})};
+ wrap(h);
+ const g=[...h.querySelectorAll('.grad .ch')];
+ g.forEach((s,k)=>{const t=g.length>1?k/(g.length-1):0;s.style.color=`color-mix(in srgb, var(--ac) ${Math.round((1-t)*100)}%, var(--ac2))`})})();
+// typewriter roles
+(function(){const r=["CSE student","software developer","problem solver","AI & tech enthusiast","detail-oriented tester"],t=$('#typed');let a=0,b=0,del=false;
+ const tick=()=>{const w=r[a];t.textContent=w.slice(0,b);
+  if(!del&&b===w.length){del=true;return setTimeout(tick,1600)}
+  if(del&&b===0){del=false;a=(a+1)%r.length}
+  b+=del?-1:1;setTimeout(tick,del?40:85)};tick()})();
+// marquee
+$('#mq').innerHTML=(()=>{const s=['Flutter','Dart','Python','FastAPI','PostgreSQL','Firebase','GPS Tracking','IoT','Git','Android Studio','AI-assisted development','Software Testing','CodeChef 2★','Competitive Programming','Data Structures & Algorithms'];
+ return [...s,...s].map(x=>`<span>${x}</span>`).join('')})();
+// core skills
+const core=[["Communication & collaboration","Work constructively with teammates and share information clearly."],["Task & time management","Organize assigned work and deliver within planned timelines."],["Guidelines & detail","Follow detailed instructions carefully and check work for accuracy."],["Quality checking & testing","Evaluate results, identify issues, and help improve quality."],["Problem solving & debugging","Investigate issues methodically and work toward practical fixes."],["Documentation & reporting","Record project details and communicate findings clearly."],["Learning & adaptability","Get comfortable with new tools, processes, and requirements."],["AI tools & technical research","Use AI-assisted tools and research to support learning and development."]];
+$('#core').innerHTML=core.map((c,i)=>`<div class="card rv" style="--d:${(i%4)*.08}s"><span class="num mono">0${i+1}</span><h3>${c[0]}</h3><p>${c[1]}</p></div>`).join('');
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');
+ const n=e.target.querySelector('[data-n]');if(n){const T=+n.dataset.n,t0=performance.now();const f=t=>{const p=Math.min((t-t0)/1500,1);n.textContent=Math.round(T*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+ io.unobserve(e.target)}),{threshold:.15});
+$$('.rv').forEach(e=>io.observe(e));
+// progress bar, glow, active link
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+addEventListener('pointermove',e=>{const g=$('#glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('section[id]').forEach(s=>so.observe(s));
+// theme + mobile menu
+const root=document.documentElement,tg=$('#tg');
+const sv=localStorage.getItem('theme');if(sv){root.dataset.theme=sv}
+const sync=()=>tg.textContent=root.dataset.theme==='dark'?'☾':'☀';sync();
+tg.onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('theme',root.dataset.theme);sync()};
+$('#menu').onclick=()=>$('#links').classList.toggle('open');
+$$('.links a').forEach(a=>a.addEventListener('click',()=>$('#links').classList.remove('open')));
+</script>
+</body>
+</html>
